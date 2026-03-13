@@ -199,6 +199,7 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.woheller69.freeDroidWarn.FreeDroidWarn
 import timber.log.Timber
 import java.net.URLDecoder
 import java.net.URLEncoder
@@ -320,6 +321,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         window.decorView.layoutDirection = View.LAYOUT_DIRECTION_LTR
         WindowCompat.setDecorFitsSystemWindows(window, false)
+
+        FreeDroidWarn.showWarningOnUpgrade(this, BuildConfig.VERSION_CODE)
 
         // Initialize Listen Together manager
         listenTogetherManager.initialize()
