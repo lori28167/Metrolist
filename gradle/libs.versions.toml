@@ -35,6 +35,7 @@ kuromojiIpadic = "0.9.0"
 newpipeextractor = "v0.26.0"
 tinypinyin = "2.0.3"
 protobuf = "4.34.0"
+freeDroidWarn = "V1.8"
 
 [libraries]
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
@@ -114,6 +115,8 @@ tinypinyin = { module = "com.github.promeG:tinypinyin", version.ref = "tinypinyi
 
 protobuf-javalite = { module = "com.google.protobuf:protobuf-javalite", version.ref = "protobuf" }
 protobuf-kotlin-lite = { module = "com.google.protobuf:protobuf-kotlin-lite", version.ref = "protobuf" }
+
+freedroidwarn = { module = "com.github.woheller69:FreeDroidWarn", version.ref = "freeDroidWarn" }
 
 [plugins]
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
